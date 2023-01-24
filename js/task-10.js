@@ -12,7 +12,6 @@ const buttonCreate = document.querySelector("button[data-create]");
 const buttonDestroy = document.querySelector("button[data-destroy]");
 
 function createBoxes(event) {
-  console.log(input.value);
   let arrea = [];
   if (input.value)
     for (let i = 1; i <= input.value; i++) {
@@ -23,7 +22,7 @@ function createBoxes(event) {
       console.log(div);
       arrea.push(div);
     }
-  console.log(arrea);
+
   return boxes.append(...arrea);
 }
 
