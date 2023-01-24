@@ -1,13 +1,11 @@
 const textInput = document.querySelector("#validation-input");
 
-console.log(textInput);
-console.log(textInput.id);
-console.log(textInput.type);
-console.log(textInput.data - length);
-console.log(textInput.placeholder);
-
 textInput.addEventListener("blur", (event) => {
-  if (textInput.value.length !== 6) {
+  const currentLength = textInput.dataset.length;
+  const dataLength = textInput.value.length;
+  console.log(currentLength);
+  console.log(dataLength);
+  if (dataLength != currentLength) {
     textInput.classList.add("invalid");
     textInput.classList.remove("valid");
   } else {
