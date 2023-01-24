@@ -4,7 +4,7 @@ console.log(textInput);
 
 textInput.addEventListener("blur", () => {
   console.log(textInput.value.length);
-  if (textInput.value.length < 6) {
+  if (textInput.value.length !== 6) {
     textInput.classList.add("invalid");
     textInput.classList.remove("valid");
   } else {
