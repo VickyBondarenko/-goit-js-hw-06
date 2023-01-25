@@ -16,8 +16,8 @@ function createBoxes(event) {
   if (input.value)
     for (let i = 1; i <= input.value; i++) {
       const div = document.createElement("div");
-      div.style.width = `${30 + 10 * i}px`;
-      div.style.height = `${30 + 10 * i}px`;
+      div.style.width = `${20 + 10 * i}px`;
+      div.style.height = `${20 + 10 * i}px`;
       div.style.backgroundColor = getRandomHexColor();
       console.log(div);
       arrea.push(div);
